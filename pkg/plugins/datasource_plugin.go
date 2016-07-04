@@ -3,7 +3,7 @@ package plugins
 import "encoding/json"
 
 type DataSourcePlugin struct {
-	FrontendPluginBase
+
 	Annotations bool   `json:"annotations"`
 	Metrics     bool   `json:"metrics"`
 	BuiltIn     bool   `json:"builtIn"`

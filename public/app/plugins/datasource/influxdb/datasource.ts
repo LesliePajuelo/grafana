@@ -115,7 +115,7 @@ export default class InfluxDatasource {
 
     return this._seriesQuery(query).then(data => {
       if (!data || !data.results || !data.results[0]) {
-        throw { message: 'No results in response from InfluxDB' };
+        throw { message: 'No results in response ' };
       }
       return new InfluxSeries({series: data.results[0].series, annotation: options.annotation}).getAnnotations();
     });

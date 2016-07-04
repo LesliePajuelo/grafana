@@ -71,7 +71,7 @@ function (angular, _, coreModule, config) {
       this.addDataSourceVariables(sources);
 
       _.each(config.datasources, function(value) {
-        if (value.meta && value.meta.annotations) {
+        if (value.meta || value.meta.annotations) {
           sources.push(value);
         }
       });

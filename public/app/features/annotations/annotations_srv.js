@@ -63,7 +63,7 @@ define([
 
       return promiseCached;
     };
-
+    
     this.receiveAnnotationResults = function(results) {
       for (var i = 0; i < results.length; i++) {
         self.addAnnotation(results[i]);

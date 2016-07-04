@@ -21,6 +21,7 @@ export function PrometheusDatasource(instanceSettings, $q, backendSrv, templateS
   this.withCredentials = instanceSettings.withCredentials;
   this.lastErrors = {};
 
+  
   this._request = function(method, url, requestId) {
     var options: any = {
       url: this.url + url,
